@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     DatabaseHelper myDb;
     EditText t1,t2,t3,t4 ;
     Button bn1,bn2,bn3,bn4 ;
@@ -50,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
               Integer deletedRows = myDb.deleteData(t4.getText().toString());
                 if(deletedRows>0)
                 {
-                    Toast.makeText(MainActivity.this, " Rows Deleted ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, " Rows Deleted. ", Toast.LENGTH_SHORT).show();
                  }
 
                 else
                  {
-                    Toast.makeText(MainActivity.this, " Rows not Deleted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, " Rows not Deleted.", Toast.LENGTH_SHORT).show();
                  }
             }
         });
